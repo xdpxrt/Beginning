@@ -21,7 +21,7 @@ class Utilities {
         System.out.printf("Book added: %15s | %-15s %5d %5dp. \n", title, author, yearOfPublication, numberOfPages);
     }
 
-    public static void daysToRead
+    public static void daysToRead ggg
 }
 
 class Book {
