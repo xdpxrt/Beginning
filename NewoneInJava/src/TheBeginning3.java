@@ -10,17 +10,14 @@ public class TheBeginning3 {
         book3.setYearOfPublication(1953);
         book3.setNumberOfPages((421));
 
-        Utilities.printInfo(book1.getTitle(), book1.getAuthor(), book1.getYearOfPublication(), book1.getNumberOfPages(),book1.);
+        Utilities.printInfo(book1.getTitle(), book1.getAuthor(), book1.getYearOfPublication(), book1.getNumberOfPages());
         Utilities.printInfo(book2.getTitle(), book2.getAuthor(), book2.getYearOfPublication(), book2.getNumberOfPages());
         Utilities.printInfo(book3.getTitle(), book3.getAuthor(), book3.getYearOfPublication(), book3.getNumberOfPages());
     }
 }
 
 class Utilities {
-    public static int daysToRead(int numberOfPages) {
-        int averagePagesPerDay = 73;
-        return numberOfPages / averagePagesPerDay;
-    }
+
 
     public static void printInfo(String title, String author, int yearOfPublication, int numberOfPages, int daysToRead) {
         System.out.printf("Book added: %25s | %-15s %5d %5dp. \n", title, author, yearOfPublication, numberOfPages, daysToRead);
@@ -44,7 +41,10 @@ class Book {
         this.yearOfPublication = yearOfPublication;
         this.numberOfPages = numberOfPages;
     }
-
+    public static int daysToRead(int numberOfPages) {
+        int averagePagesPerDay = 73;
+        return numberOfPages / averagePagesPerDay;
+    }
     void setTitle(String title) {
         this.title = title;
     }
