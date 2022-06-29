@@ -41,10 +41,12 @@ class Book {
         this.yearOfPublication = yearOfPublication;
         this.numberOfPages = numberOfPages;
     }
+
     public static int daysToRead(int numberOfPages) {
         int averagePagesPerDay = 73;
         return numberOfPages / averagePagesPerDay;
     }
+
     void setTitle(String title) {
         this.title = title;
     }
