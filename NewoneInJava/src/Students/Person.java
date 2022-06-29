@@ -17,7 +17,6 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
-
     }
 
     public String getName() {
@@ -30,8 +29,6 @@ public class Person {
 
     public String getGender() {
         return this.gender;
-
-
     }
 
     public void setYearOfBirth(int yearOfBirth) {
