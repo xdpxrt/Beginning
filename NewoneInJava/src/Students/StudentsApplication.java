@@ -1,9 +1,8 @@
 package Students;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class StudentsAppliacation {
+public class StudentsApplication {
     public static void main(String[] args) {
         Person student1 = new Person(1, "John", "Male", 1987);
         Person student2 = new Person(2, "Sarah", "Female", 1989);
@@ -33,7 +32,8 @@ public class StudentsAppliacation {
 //        students.remove(1);
 //        System.out.println(students.contains(student5));
 //        Utilities.splitTo3(students);
-        System.out.println(Utilities.getNumberOfSimilarStudents(students, student8));
-
+//        System.out.println(Utilities.getNumberOfSimilarStudents(students, student8));
+//        Utilities.getFirstElementAgeSplitTo3(students);
+        Utilities.getConscriptedMens(students);
     }
 }

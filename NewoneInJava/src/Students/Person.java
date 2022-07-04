@@ -60,7 +60,7 @@ public class Person {
         this.yearOfBirth = yearOfBirth;
     }
 
-    public int getYearOFBirth() {
+    public int getYearOfBirth() {
         return this.yearOfBirth;
     }
 }

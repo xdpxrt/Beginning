@@ -20,4 +20,23 @@ public class Utilities {
         }
         return ++numberOfSimilar;
     }
+
+    static void getFirstElementAgeSplitTo3(ArrayList<Person> list) {
+        int year = 2008;
+        for (Person p : list) {
+            if ((year - p.getYearOfBirth()) % 3 == 0) {
+                System.out.println(p);
+                break;
+            }
+        }
+    }
+
+    static void getConscriptedMens(ArrayList<Person> list) {
+        for (Person p : list) {
+            int year = 2008;
+            if (18 <= (2008 - p.getYearOfBirth()) && (2008 - p.getYearOfBirth()) <= 27 && p.getName().startsWith("B")) {
+                System.out.print(p);
+            }
+        }
+    }
 }
